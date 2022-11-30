@@ -14,7 +14,7 @@ namespace GildedRose.Main
         }
         public Item()
         {
-
+                
         }
         public string Name { get; set; }
 

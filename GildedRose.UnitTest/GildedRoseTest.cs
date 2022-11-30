@@ -8,7 +8,7 @@ namespace GildedRoseItems.UnitTest
     {
         //GildedRose
         [TestMethod]
-        public void when_SellIn_greater_than_0_and_Quality_greater_than_0_decrease_Quality_by_1()
+        public void When_SellIn_greater_than_0_and_Quality_greater_than_0_decrease_Quality_by_1()
         {
             Item[] Items = new Item[] { new Item("foo", 3, 10) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -30,7 +30,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_greater_than_0_and_Quality_0_decrease_Quality_by_0()
+        public void When_SellIn_greater_than_0_and_Quality_0_decrease_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("foo", 3, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -52,7 +52,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_0_or_less_and_Quality_greater_than_0_decrease_Quality_by_2()
+        public void When_SellIn_0_or_less_and_Quality_greater_than_0_decrease_Quality_by_2()
         {
             Item[] Items = new Item[] { new Item("foo", 0, 7) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -74,7 +74,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_0_or_less_and_Quality_0_decrease_Quality_by_0()
+        public void When_SellIn_0_or_less_and_Quality_0_decrease_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("foo", 0, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -97,7 +97,7 @@ namespace GildedRoseItems.UnitTest
 
         // AgedBrie
         [TestMethod]
-        public void when_SellIn_greater_than_0_and_Quality_less_than_50_increase_Quality_by_1()
+        public void When_SellIn_greater_than_0_and_Quality_less_than_50_increase_Quality_by_1()
         {
             Item[] Items = new Item[] { new Item("Aged Brie", 3, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -119,7 +119,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_greater_than_0_and_Quality_50_increase_Quality_by_0()
+        public void When_SellIn_greater_than_0_and_Quality_50_increase_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("Aged Brie", 3, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -141,7 +141,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_0_or_less_and_Quality_less_than_50_increase_Quality_by_2()
+        public void When_SellIn_0_or_less_and_Quality_less_than_50_increase_Quality_by_2()
         {
             Item[] Items = new Item[] { new Item("Aged Brie", 0, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -164,7 +164,7 @@ namespace GildedRoseItems.UnitTest
 
 
         [TestMethod]
-        public void when_SellIn_0_or_less_and_Quality_50_increase_Quality_by_0()
+        public void When_SellIn_0_or_less_and_Quality_50_increase_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("Aged Brie", 0, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -187,7 +187,7 @@ namespace GildedRoseItems.UnitTest
 
         // Backstagepasses
         [TestMethod]
-        public void when_SellIn_greater_than_10_and_Quality_less_than_50_increase_Quality_by_1()
+        public void When_SellIn_greater_than_10_and_Quality_less_than_50_increase_Quality_by_1()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 13, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -209,7 +209,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_greater_than_10_and_Quality_50_increase_Quality_by_0()
+        public void When_SellIn_greater_than_10_and_Quality_50_increase_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 13, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -231,7 +231,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_10_or_less_and_Quality_less_than_50_increase_Quality_by_2()
+        public void When_SellIn_10_or_less_and_Quality_less_than_50_increase_Quality_by_2()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 8, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -253,7 +253,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_10_or_less_and_Quality_50_increase_Quality_by_0()
+        public void When_SellIn_10_or_less_and_Quality_50_increase_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 8, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -275,7 +275,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_5_or_less_and_Quality_less_than_50_increase_Quality_by_3()
+        public void When_SellIn_5_or_less_and_Quality_less_than_50_increase_Quality_by_3()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 3, 0) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -297,7 +297,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_5_or_less_and_Quality_50_increase_Quality_by_0()
+        public void When_SellIn_5_or_less_and_Quality_50_increase_Quality_by_0()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 3, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -319,7 +319,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_0_and_Quality_less_than_50_increase_Quality_to_0()
+        public void When_SellIn_0_and_Quality_less_than_50_increase_Quality_to_0()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 0, 10) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
@@ -331,7 +331,7 @@ namespace GildedRoseItems.UnitTest
         }
 
         [TestMethod]
-        public void when_SellIn_0_and_Quality_50_increase_Quality_to_0()
+        public void When_SellIn_0_and_Quality_50_increase_Quality_to_0()
         {
             Item[] Items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50) };
             GildedRoseProcessor app = new GildedRoseProcessor(Items);
